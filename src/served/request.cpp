@@ -138,4 +138,9 @@ request::body() const
 	return _body;
 }
 
+const std::unordered_map<std::string, std::string> request::headers() const
+{
+	return _headers;
+}
+
 } // served

@@ -45,6 +45,7 @@ namespace served {
  */
 class request
 {
+protected:
 	// Appropriate map type for request may differ from response
 	typedef std::unordered_map<std::string, std::string> header_list;
 
@@ -159,12 +160,18 @@ public:
 	 */
 	const std::string header(std::string const& header) const;
 
+
+
 	/*
 	 * Get the body of the request.
 	 *
 	 * @return the body of the request
 	 */
 	const std::string body() const;
+
+	const std::unordered_map<std::string, std::string> headers() const;
+
+
 
 public:
 	//  -----  public members  -----
