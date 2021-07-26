@@ -62,4 +62,9 @@ parameters::get(std::string const& key) const
 	return std::string();
 }
 
+const std::unordered_map<std::string, std::string> parameters::getList() const
+{
+	return _list;
+}
+
 } // served

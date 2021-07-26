@@ -96,6 +96,9 @@ public:
 
 	parameter_list::const_iterator begin() const { return _list.begin(); }
 	parameter_list::const_iterator end  () const { return _list.end  (); }
+
+
+	const std::unordered_map<std::string, std::string> getList() const;
 };
 
 } // served
